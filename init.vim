@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')
+zzcall plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-commentary' "Use gc to comment stuff
 Plug 'lewis6991/impatient.nvim' "Speed up loading Lua modules in Neovim to improve startup time
 Plug 'simnalamburt/vim-mundo' "Visualize the Vim undo tree
