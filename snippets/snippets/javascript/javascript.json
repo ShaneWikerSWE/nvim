@@ -1,0 +1,166 @@
+{
+  "import from": {
+    "prefix": "ifr",
+    "body": "import ${2:*} from '${1:MODULE}'\n${0}"
+  },
+  "function": {
+    "prefix": "fun",
+    "body": "function ${1:NAME}(${2}) {\n${3}\n}\n${4}"
+  },
+  "const": {
+    "prefix": "con",
+    "body": "const ${1:NAME} = ${2}\n${0}"
+  },
+  "const []": {
+    "prefix": "car",
+    "body": "const [${1:NAME}] = ${2}\n${0}"
+  },
+  "const arrow function": {
+    "prefix": "caf",
+    "body": "const ${1:NAME} = (${2}) = > {\n${3}\n}\n${0}"
+  },
+  "console.error()": {
+    "prefix": "cer",
+    "body": "console.error(${1:STRING})\n${0}"
+  },
+  "console.log()": {
+    "prefix": "clo",
+    "body": "console.log(${1:STRING})\n${0}"
+  },
+  "createSlice()": {
+    "prefix": "csl",
+    "body": "createSlice(${1})\n${0}"
+  },
+  "else if": {
+    "prefix": "eif",
+    "body": "else if (${1:CONDITION}) {\n${2}\n}\n${0}"
+  },
+  "else": {
+    "prefix": "els",
+    "body": "else (${1:CONDITION}) {\n${2}\n}\n${0}"
+  },
+  "export": {
+    "prefix": "exp",
+    "body": "export ${0}"
+  },
+  "export const": {
+    "prefix": "eco",
+    "body": "export const ${1:NAME} = (${2}) =>  {\n${3}\n}\n${0}"
+  },
+  "export default": {
+    "prefix": "ede",
+    "body": "export default ${0}"
+  },
+  "export default const": {
+    "prefix": "edc",
+    "body": "export default const ${1:NAME} = (${2}) => {\n${3}\n}\n${0}"
+  },
+  "export default function": {
+    "prefix": "edf",
+    "body": "export default function ${1:NAME}(${2}){\n${3}\n}\n${0}"
+  },
+  "getElementById": {
+    "prefix": "gei",
+    "body": "document.getElementById('')\n${0}"
+  },
+  "JSON.parse()": {
+    "prefix": "jpa",
+    "body": "JSON.parse(${1})\n${0}"
+  },
+  "JSON.stringify()": {
+    "prefix": "jst",
+    "body": "JSON.stringify(${1})\n${0}"
+  },
+  "for": {
+    "prefix": "for",
+    "body": "for ( let ${1:i} = ${2:0}; ${1} <= ${3:TARGET}; ${1}++) {\n${4}\n}\n${0}"
+  },
+  "for in": {
+    "prefix": "fin",
+    "body": "for ( const ${1:KEY} in ${2:VALUE}) {\n${3}\n}\n${0}"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "if (${1:CONDITION}) {\n${2}\n}\n${0}"
+  },
+  "includes()": {
+    "prefix": "inc",
+    "body": "includes(${1})\n${0}"
+  },
+  "indexOf()": {
+    "prefix": "iof",
+    "body": "indexOf(${1})\n${0}"
+  },
+  "length": {
+    "prefix": "len",
+    "body": "length"
+  },
+  "let": {
+    "prefix": "let",
+    "body": "let ${1:NAME} = ${2}\n${0}"
+  },
+  "Object.entries()": {
+    "prefix": "oen",
+    "body": "Object.entries(${1:OBJECT})\n${0}"
+  },
+  "push()": {
+    "prefix": "pus",
+    "body": "push(${1:VALUE})\n${0}"
+  },
+  "replaceAll()": {
+    "prefix": "ral",
+    "body": "replaceAll(${1})\n${0}"
+  },
+  "replace()": {
+    "prefix": "rep",
+    "body": "replace(${1})\n${0}"
+  },
+  "return": {
+    "prefix": "ret",
+    "body": "return ${1}\n${0}"
+  },
+  "return array": {
+    "prefix": "rar",
+    "body": "return [${1}]\n${0}"
+  },
+  "toString()": {
+    "prefix": "tst",
+    "body": "toString()\n${0}"
+  },
+  "slice()": {
+    "prefix": "sl",
+    "body": "slice(${1})\n${0}"
+  },
+  "split()": {
+    "prefix": "spl",
+    "body": "split(${1})\n${0}"
+  },
+  "substring()": {
+    "prefix": "sub",
+    "body": "substring(${1})\n${0}"
+  },
+  "typeof": {
+    "prefix": "tof",
+    "body": "typeof ${1}\n${0}"
+  },
+  "useEffect": {
+    "prefix": "uef",
+    "body": "useEffect(${1:VALUE})\n${0}"
+  },
+  "useState": {
+    "prefix": "ust",
+    "body": "useState(${1:VALUE})\n${0}"
+  },
+  "useSelector": {
+    "prefix": "use",
+    "body": "useSelector(state => state.${1:VALUE})\n${0}"
+  },
+  "useContext": {
+    "prefix": "usc",
+    "body": "useContext(${1:CONTEXT})\n${0}"
+  },
+  "useDispatch": {
+    "prefix": "udi",
+    "body": "useDispatch(${1})\n${0}"
+  }
+}

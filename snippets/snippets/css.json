@@ -1,0 +1,357 @@
+{
+  "align-items": {
+    "prefix": "ali",
+    "body": "align-items: ${1|flex-start,flex-end,center,baseline,stretch,start,end,self-start,self-end|};\n${0}",
+    "description": "initial value: stretch"
+  },
+  "animation": {
+    "prefix": "ani",
+    "body": "animation: ${1:name} ${2:1s} ${3|linear,ease-in-out,ease,ease-in,ease-out,step-start,step-end,steps,cubic-bezier|};\n${0}",
+    "description": "animation: name duration timing-function delay direction count fill-mode play-state"
+  },
+  "animation-delay": {
+    "prefix": "ade",
+    "body": "animation-delay: ${1:1s};\n${0}"
+  },
+  "animation-direction": {
+    "prefix": "adi",
+    "body": "animation-direction: ${1|alternate,alternate-reverse,reverse,normal|};\n${0}",
+    "description": "initial value: normal"
+  },
+  "animation-fill-mode": {
+    "prefix": "afm",
+    "body": "animation-fill-mode: ${1|forwards,backwards,both,none|};\n${0}",
+    "description": "initial value: none"
+  },
+  "animation-iteration-count": {
+    "prefix": "aic",
+    "body": "animation-iteration-count: ${1:infinite};\n${0}",
+    "description": "initial value: 1"
+  },
+  "animation-name": {
+    "prefix": "ana",
+    "body": "animation-name: ${1:name}\n${0};"
+  },
+  "animation-play-state": {
+    "prefix": "aps",
+    "body": "animation-play-state: ${1|paused,running|};\n${0}",
+    "description": "initial value: running"
+  },
+  "animation-timing-function": {
+    "prefix": "atf",
+    "body": "animation-timing-function: ${1|linear,ease,ease-in-out,ease-in,ease-out,step-start,step-end,steps,cubic-bezier|};\n${0}",
+    "description": "initial value: ease"
+  },
+  "background": {
+    "prefix": "bac",
+    "body": "background: ${1:#fff};\n${0}",
+    "description": "background: image position/size repeat attachment box box"
+  },
+  "background-attachment": {
+    "prefix": "bat",
+    "body": "background-attachment: ${1|fixed,scroll,local|};\n${0}",
+    "description": "initial value: scroll"
+  },
+  "background-color": {
+    "prefix": "bco",
+    "body": "background-color: ${1:#fff};\n${0}"
+  },
+  "background-clip": {
+    "prefix": "bcl",
+    "body": "background-clip: ${1|border-box,padding-box,content-box,text|};\n${0}",
+    "description": "initial value: border-box"
+  },
+  "background-image": {
+    "prefix": "bim",
+    "body": "background-image: url('${1:background.jpg}');\n${0}"
+  },
+  "background-origin": {
+    "prefix": "bor",
+    "body": "background-origin: ${1|border-box,padding-box,content-box|};\n${0}",
+    "description": "initial value: padding-box"
+  },
+  "background-position": {
+    "prefix": "bpo",
+    "body": "background-position: ${1:left} ${2:top};\n${0}"
+  },
+  "background-repeat": {
+    "prefix": "bre",
+    "body": "background-repeat: ${1|no-repeat,repeat-x,repeat-y,repeat,space,round|};\n${0}",
+    "description": "initial value: repeat"
+  },
+  "background-size": {
+    "prefix": "bsi",
+    "body": "background-size: ${1:cover};\n${0}"
+  },
+  "border": {
+    "prefix": "bor",
+    "body": "border: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${3:#000};\n${0}"
+  },
+  "border-color": {
+    "prefix": "bco",
+    "body": "border-color: ${1:#000};\n${0}"
+  },
+  "border-style": {
+    "prefix": "bst",
+    "body": "border-style: ${1|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|};\n${0}"
+  },
+  "border-width": {
+    "prefix": "bwi",
+    "body": "border-width: ${1:1px};\n${0}"
+  },
+  "border-bottom": {
+    "prefix": "bbo",
+    "body": "border-bottom: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${3:#000};\n${0}"
+  },
+  "border-left": {
+    "prefix": "ble",
+    "body": "border-left: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${3:#000};\n${0}"
+  },
+  "border-right": {
+    "prefix": "bri",
+    "body": "border-right: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${3:#000};\n${0}"
+  },
+  "border-top": {
+    "prefix": "bto",
+    "body": "border-top: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${3:#000};\n${0}"
+  },
+  "border-radius": {
+    "prefix": "bra",
+    "body": "border-radius: ${1:2px};\n${0}"
+  },
+  "bottom": {
+    "prefix": "bot",
+    "body": "bottom: ${1:0};\n${0}"
+  },
+  "box-shadow": {
+    "prefix": "bsh",
+    "body": "box-shadow: ${1:1px} ${2:1px} ${3:1px} ${4:1px} ${5:rgba(0, 0, 0, .5)};\n${0}",
+    "description": "box-shadow: x-offset y-offset blur spread color"
+  },
+  "box-sizing": {
+    "prefix": "bsi",
+    "body": "box-sizing: ${1|border-box,content-box|};\n${0}",
+    "description": "initial value: content-box"
+  },
+  "clear": {
+    "prefix": "cle",
+    "body": "clear: ${1|both,left,right,none|};\n${0}"
+  },
+  "color": {
+    "prefix": "col",
+    "body": "color: ${1:#000};\n${0}"
+  },
+  "content": {
+    "prefix": "con",
+    "body": "content: '${1}';\n${0}"
+  },
+  "cursor": {
+    "prefix": "cur",
+    "body": "cursor: ${1|auto,default,alias,cell,copy,crosshair,context-menu,help,grab,grabbing,move,none,no-drop,not-allowed,pointer,progress,e-resize,all-scroll,text,wait,vertical-text,zoom-in,zoom-out|};\n${0}",
+    "description": "initial value: auto"
+  },
+  "display": {
+    "prefix": "dis",
+    "body": "display: ${1|none,block,inline,inline-block,flex,inline-flex,list-item,table,inline-table,table-caption,table-cell,table-row,table-row-group,table-column|};\n${0}"
+  },
+  "flex": {
+    "prefix": "fle",
+    "body": "flex: ${1:1} ${2:1} ${3:auto};\n${0}",
+    "description": "flex: grow shrink basis"
+  },
+  "flex-direction": {
+    "prefix": "fdi",
+    "body": "flex-direction: ${1|row,row-reverse,column,column-reverse|};\n${0}",
+    "description": "initial value: row"
+  },
+  "flex-flow": {
+    "prefix": "ffl",
+    "body": "flex-flow: ${1|row,row-reverse,column,column-reverse|} ${2|wrap,wrap-reverse,nowrap|}\n${0};"
+  },
+  "flex-wrap": {
+    "prefix": "fwr",
+    "body": "flex-wrap: ${1|wrap,wrap-reverse,nowrap|};\n${0}",
+    "description": "initial value: nowrap"
+  },
+  "float": {
+    "prefix": "flo",
+    "body": "float: ${1|left,right,none|};\n${0}"
+  },
+  "font-family": {
+    "prefix": "ffa",
+    "body": "font-family: ${1:arial};\n${0}"
+  },
+  "font-size": {
+    "prefix": "fsi",
+    "body": "font-size: ${1:12px};\n${0}"
+  },
+  "font-style": {
+    "prefix": "fst",
+    "body": "font-style: ${1|italic,oblique,normal|};\n${0}"
+  },
+  "font-weight": {
+    "prefix": "fwe",
+    "body": "font-weight: ${1:bold};\n${0}"
+  },
+  "font": {
+    "prefix": "fon",
+    "body": "font: ${1:12px/1.5};\n${0}",
+    "description": "font: [weight style variant stretch] size/line-height family"
+  },
+  "height": {
+    "prefix": "hei",
+    "body": "height: ${1:1px};\n${0}"
+  },
+  "justify-content": {
+    "prefix": "jco",
+    "body": "justify-content: ${1|flex-start,flex-end,center,space-between,space-around|};\n${0}",
+    "description": "initial value: flex-start"
+  },
+  "list-style": {
+    "prefix": "lst",
+    "body": "list-style: ${1|disc,circle,square,decimal,lower-roman,upper-roman,lower-alpha,upper-alpha,none,armenian,cjk-ideographic,georgian,lower-greek,hebrew,hiragana,hiragana-iroha,katakana,katakana-iroha,lower-latin,upper-latin|} ${2|outside,inside|};\n${0}",
+    "description": "list-style: type position image"
+  },
+  "list-style-type": {
+    "prefix": "lst",
+    "body": "list-style-type: ${1|disc,circle,square,decimal,lower-roman,upper-roman,lower-alpha,upper-alpha,none,armenian,cjk-ideographic,georgian,lower-greek,hebrew,hiragana,hiragana-iroha,katakana,katakana-iroha,lower-latin,upper-latin|};\n${0}",
+    "description": "initial value: disc"
+  },
+  "left": {
+    "prefix": "lef",
+    "body": "left: ${1:0};\n${0}"
+  },
+  "line-height": {
+    "prefix": "lhe",
+    "body": "line-height: ${1:1.5};\n${0}"
+  },
+  "letter-spacing": {
+    "prefix": "lsp",
+    "body": "letter-spacing: ${1:2px};\n${0}"
+  },
+  "margin": {
+    "prefix": "mar",
+    "body": "margin: ${1:0};\n${0}"
+  },
+  "margin-bottom": {
+    "prefix": "mbo",
+    "body": "margin-bottom: ${1:0};\n${0}"
+  },
+  "margin-left": {
+    "prefix": "mle",
+    "body": "margin-left: ${1:0};\n${0}"
+  },
+  "margin-right": {
+    "prefix": "mri",
+    "body": "margin-right: ${1:0};\n${0}"
+  },
+  "margin-top": {
+    "prefix": "mto",
+    "body": "margin-top: ${1:0};\n${0}"
+  },
+  "min-height": {
+    "prefix": "mhe",
+    "body": "min-height: ${1:1px};\n${0}"
+  },
+  "min-width": {
+    "prefix": "mwi",
+    "body": "min-width: ${1:1px};\n${0}"
+  },
+  "max-height": {
+    "prefix": "mhe",
+    "body": "max-height: ${1:1px};\n${0}"
+  },
+  "max-width": {
+    "prefix": "mwi",
+    "body": "max-width: ${1:1px};\n${0}"
+  },
+  "opacity": {
+    "prefix": "opa",
+    "body": "opacity: ${1:0};\n${0}"
+  },
+  "overflow": {
+    "prefix": "ove",
+    "body": "overflow: ${1|visible,hidden,scroll,auto,clip|};\n${0}"
+  },
+  "padding": {
+    "prefix": "pad",
+    "body": "padding: ${1:0};\n${0}"
+  },
+  "padding-bottom": {
+    "prefix": "pbo",
+    "body": "padding-bottom: ${1:0};\n${0}"
+  },
+  "padding-left": {
+    "prefix": "ple",
+    "body": "padding-left: ${1:0};\n${0}"
+  },
+  "padding-right": {
+    "prefix": "pri",
+    "body": "padding-right: ${1:0};\n${0}"
+  },
+  "padding-top": {
+    "prefix": "pto",
+    "body": "padding-top: ${1:0};\n${0}"
+  },
+  "position": {
+    "prefix": "pos",
+    "body": "position: ${1|relative,absolute,fixed,sticky,static|};\n${0}"
+  },
+  "right": {
+    "prefix": "rig",
+    "body": "right: ${1:0};\n${0}"
+  },
+  "text-align": {
+    "prefix": "tal",
+    "body": "text-align: ${1|center,left,right,justify,start,end|};\n${0}"
+  },
+  "text-decoration": {
+    "prefix": "tde",
+    "body": "text-decoration: ${1|none,underline,overline,line-through|};\n${0}"
+  },
+  "text-indent": {
+    "prefix": "tin",
+    "body": "text-indent: ${1:2em};\n${0}"
+  },
+  "text-shadow": {
+    "prefix": "tsh",
+    "body": "text-shadow: ${1:1px} ${2:1px} ${3:1px} ${4:1px} ${5:rgba(0, 0, 0, .5)};\n${0}",
+    "description": "text-shadow: x-offset y-offset blur spread color"
+  },
+  "text-transform": {
+    "prefix": "ttr",
+    "body": "text-transform: ${1|capitalize,uppercase,lowercase,full-width,none|};\n${0}"
+  },
+  "top": {
+    "prefix": "top",
+    "body": "top: ${1:0};\n${0}"
+  },
+  "vertical-align": {
+    "prefix": "val",
+    "body": "vertical-align: ${1|baseline,middle,top,bottom,sub,super,text-top,text-bottom|};\n${0}"
+  },
+  "visibility": {
+    "prefix": "vis",
+    "body": "visibility: ${1|visible,hidden,collapse|};\n${0}"
+  },
+  "word-break": {
+    "prefix": "wbr",
+    "body": "word-break: ${1|break-all,keep-all,break-word,normal|};\n${0}"
+  },
+  "width": {
+    "prefix": "wid",
+    "body": "width: ${1:0};\n${0}"
+  },
+  "white-space": {
+    "prefix": "wsp",
+    "body": "white-space: ${1|nowrap,pre,pre-wrap,pre-line,normal|};\n${0}"
+  },
+  "word-wrap": {
+    "prefix": "wwr",
+    "body": "word-wrap: ${1|break-word,break-spaces,normal|};\n${0}"
+  },
+  "z-index": {
+    "prefix": "zin",
+    "body": "z-index: ${1:-1};\n${0}"
+  }
+}
