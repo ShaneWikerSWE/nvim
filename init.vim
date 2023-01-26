@@ -1,4 +1,4 @@
-" 2023-01-24
+" 2023-01-25
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-commentary' "Use gc to comment stuff
 Plug 'lewis6991/impatient.nvim' "Speed up loading Lua modules in Neovim to improve startup time
@@ -55,6 +55,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'folke/trouble.nvim'
 Plug 'airblade/vim-rooter'
 Plug 'mattn/calendar-vim'
+Plug 'airblade/vim-gitgutter'
 
   " Disable netrw gx mapping.
   let g:netrw_nogx = get(g:, 'netrw_nogx', 1)

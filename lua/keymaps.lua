@@ -42,6 +42,7 @@ keymap("n", "<Leader>fm", "mm", opts) --Rename file
 keymap("n", "<leader>ga", ":Git add .<CR>", opts) --Git add all
 keymap("n", "<leader>gb", ":Git branch -M ", opts) --Git select branch
 keymap("n", "<leader>gc", ":Git commit -m ", opts) --Git commit
+keymap("n", "<leader>gd", ":Gdiff", opts) --Git reset local changes
 keymap("n", "<leader>gi", ":Git init<CR>", opts) --Git initialize repo
 vim.api.nvim_set_keymap('n', '<leader>gl',
 	'<cmd>lua require"gitlinker".get_buf_range_url("n", {action_callback = require"gitlinker.actions".open_in_browser})<cr>'
