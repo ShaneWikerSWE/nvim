@@ -98,7 +98,6 @@ if vim.fn.hostname() == "amethyst" then
 	keymap("n", "<leader>ol", ":e /home/thenomadicaspie/.config/nvim/lua/luasnips_config.lua<CR>", opts)
 	keymap("n", "<leader>opn", ":e /home/thenomadicaspie/projects/psyche_react/src/App.js<CR><CR>", opts)
 	keymap("n", "<leader>opo", ":e /home/thenomadicaspie/projects/psyche_old/script.js<CR><CR>", opts)
-	keymap("n", "<leader>om", ":e /home/thenomadicaspie/gfc/project/marketing-ops-api<CR>", opts)
 	keymap("n", "<leader>onc", ":e /home/thenomadicaspie/gfc/project/next.client<CR>", opts)
 	keymap("n", "<leader>ond", ":e /home/thenomadicaspie/gfc/project/next.data<CR>", opts)
 	keymap("n", "<leader>oq", ":e //home/thenomadicaspie/qmk_firmware/keyboards/crkbd/keymaps/thenomadicaspie/keymap.c<CR>"
