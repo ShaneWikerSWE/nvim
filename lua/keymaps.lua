@@ -18,6 +18,12 @@ keymap("n", "<Leader>bx", ":bd!<CR>", opts) --Delete buffer
 keymap("n", "<leader>bd", ":%bd!<CR>", opts) --Delete all buffers
 keymap("n", "<leader>bn", ":sp new<CR>", opts) --New buffer
 
+---Tabs
+keymap("n", "<Leader>pn", ":tabnew<CR>", opts)
+keymap("n", "<Leader>px", ":tabc<CR>", opts)
+keymap("n", ",", ":+tabnext<CR>", opts)
+keymap("n", ";", ":-tabnext<CR>", opts)
+
 --Dap
 keymap("n", "<Leader>dd", ":lua require'dap'.continue()<CR>", opts) --Dap continue
 keymap("n", "<Leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", opts) -- Dap toggle breakpoint
@@ -103,6 +109,7 @@ if vim.fn.hostname() == "amethyst" then
 	keymap("n", "<leader>ond", ":e /home/thenomadicaspie/gfc/project/next.data<CR>", opts)
 	keymap("n", "<leader>oq", ":e //home/thenomadicaspie/qmk_firmware/keyboards/crkbd/keymaps/thenomadicaspie/keymap.c<CR>"
 		, opts)
+	keymap("n", "<leader>op", ":e /home/thenomadicaspie/projects/pir/src/App.js<CR>", opts)
 end
 
 --Plug
@@ -124,7 +131,8 @@ keymap("n", "<leader>tg", ":Telescope live_grep<CR>", opts) --Telescope grep
 keymap("n", "<leader>th", ":Telescope help_tags<CR>", opts) --Telescope help
 keymap("n", "<leader>tl", ":Telescope luasnip<CR>", opts) --Telescope Luasnip
 keymap("n", "<leader>ts", ":Telescope grep_string<CR>", opts) --Telescope string
-keymap("n", "<space>tt", ":Telescope file_browser<CR>", opts) --Telescope show file browser
+keymap("n", "<leader>tt", ":Telescope file_browser<CR>", opts) --Telescope show file browser
+keymap("n", "<leader>tm", ":Telescope marks<CR>", opts) --Telescope show file browser
 
 --Mundo
 keymap("n", "<leader>uu", ":MundoToggle<CR>", opts) --Uses vim-mundo to visualize undo tree
@@ -157,10 +165,6 @@ keymap("n", "<down>", "<C-w><down>", opts) --Go to bottom buffer
 keymap("n", "<left>", "<C-w><left>", opts) --Go to left buffer
 keymap("n", "<right>", "<C-w><right>", opts) --Go to right buffer
 
---Diagnostic
-keymap("n", "<C-x>", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts) --Go to next diagnostic
-keymap("n", "<C-z>", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts) --Go to previous diagnostic
-
 --LuaSnip
 local ls = require("luasnip")
 vim.keymap.set({ "i", "s" }, "<C-l>", function()
@@ -192,7 +196,7 @@ keymap("v", "p", '"+p', opts) --Previous
 keymap("n", "Y", "y$", opts) --Yank to end of line
 keymap("n", "<leader>J", "J", opts) --Combine line below
 keymap("n", "<leader>l", "*", opts) --Go to next instarce of word under cursor
-keymap("n", "<leader>h", "#", opts) --Go to previous instance of word under cursor
+-- keymap("n", "<leader>h", "#", opts) --Go to previous instance of word under cursor
 
 --Quickfix
 keymap("n", "<leader>qr", ":cdo s/", opts) --Find and replace
@@ -209,3 +213,15 @@ keymap("n", "<Leader>2<CR>", ":2ToggleTerm size=10<CR>", opts) --Open terminal 2
 keymap("n", "<Leader>3<CR>", ":3ToggleTerm size=10<CR> ", opts) --Open terminal 3
 keymap("n", "<Leader>4<CR>", ":4ToggleTerm size=10<CR>", opts) --Open terminal 4
 keymap("n", "<Leader>5<CR>", ":5ToggleTerm size=40<CR> ", opts) --Open terminal 5
+
+--Marks
+keymap("n", "<Leader>md", ":delmarks ", opts)
+keymap("n", "<Leader>mc", ":delm! | delm A-Z0-9<CR>", opts)
+
+--NERDTree
+keymap("n", "<Leader>nt", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<Leader>nr", ":NERDTreeFocus<cr>R<c-w><c-p>", opts)
+
+--Diagnostic
+keymap("n", "<Leader>,", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts) --Go to next diagnostic
+keymap("n", "<Leadel>.", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts) --Go to previous diagnostic

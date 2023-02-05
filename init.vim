@@ -1,4 +1,4 @@
-" 2023-02-03
+" 2023-02-04
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-commentary' "Use gc to comment stuff
 Plug 'lewis6991/impatient.nvim' "Speed up loading Lua modules in Neovim to improve startup time
@@ -56,6 +56,7 @@ Plug 'folke/trouble.nvim'
 Plug 'airblade/vim-rooter'
 Plug 'mattn/calendar-vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
 
   " Disable netrw gx mapping.
   let g:netrw_nogx = get(g:, 'netrw_nogx', 1)
@@ -134,3 +135,5 @@ if exists('$TMUX')
 
 "Seach and replace
 nnoremap <Leader>rr :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+:au VimEnter * :GitGutterDisable
