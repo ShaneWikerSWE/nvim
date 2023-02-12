@@ -195,8 +195,8 @@ keymap("n", "p", '"+p', opts) --Previous
 keymap("v", "p", '"+p', opts) --Previous
 keymap("n", "Y", "y$", opts) --Yank to end of line
 keymap("n", "<leader>J", "J", opts) --Combine line below
-keymap("n", "<leader>l", "*", opts) --Go to next instarce of word under cursor
--- keymap("n", "<leader>h", "#", opts) --Go to previous instance of word under cursor
+keymap("n", "<leader>j", "*", opts) --Go to next instarce of word under cursor
+keymap("n", "<leader>k", "*", opts) --Move current line down
 
 --Quickfix
 keymap("n", "<leader>qr", ":cdo s/", opts) --Find and replace
