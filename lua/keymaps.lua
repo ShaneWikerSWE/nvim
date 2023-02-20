@@ -109,7 +109,7 @@ if vim.fn.hostname() == "amethyst" then
 	keymap("n", "<leader>oq", ":e //home/thenomadicaspie/qmk_firmware/keyboards/crkbd/keymaps/thenomadicaspie/keymap.c<CR>"
 		, opts)
 	keymap("n", "<leader>op", ":e /home/thenomadicaspie/projects/pir/src/App.js<CR>", opts)
-	keymap("n", "<leader>or", ":e /home/thenomadicaspie/.config/REAPER/Scripts/reaper-keys/definitions/defaults/<CR>", opts)
+	keymap("n", "<leader>od", ":e /home/thenomadicaspie/.config/REAPER/Scripts/reaper-keys/definitions/defaults/<CR>", opts)
 	keymap("n", "<leader>oc",
 		":e /home/thenomadicaspie/.config/REAPER/Scripts/ChordGun-release/ChordGun/src/interface/handleInput.lua<CR>", opts)
 end
