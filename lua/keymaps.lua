@@ -1,4 +1,4 @@
-local function map(mode, lhs, rhs, opts)
+function map(mode, lhs, rhs, opts)
 	local options = { noremap = true, silent = true }
 	if opts then
 		options = vim.tbl_extend('force', options, opts)
@@ -71,6 +71,7 @@ keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts) --Go to declar
 keymap("n", "gf", "<C-]><CR>", opts) --Go to tag
 keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) --Go to implementation
 keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts) --Go to references
+keymap("n", "gs", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) --Go to references
 
 ----File management
 keymap("n", "<Leader>ma", ":w ", opts) --Menu save as
