@@ -1,4 +1,4 @@
-" 2023-03-28
+" 2023-04-03
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-commentary' "Use gc to comment stuff
 Plug 'lewis6991/impatient.nvim' "Speed up loading Lua modules in Neovim to improve startup time
@@ -139,3 +139,13 @@ if exists('$TMUX')
 nnoremap <Leader>rr :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 :au VimEnter * :GitGutterDisable
+
+function! AppendToChatList()
+  if expand('%') != ''
+    let file = expand('%')
+    execute "write >> /home/thenomadicaspie/chatgptlist.txt" | execute "put ='" . file . "'" | execute "put =readfile('" . file . "')" | normal! G o <CR> <CR>
+  endif
+endfunction
+
+nnoremap <leader>ca :call AppendToChatList()<CR>
+nnoremap <leader>cd :silent !echo "" > /home/thenomadicaspie/chatgptlist.txt<CR>

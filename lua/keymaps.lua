@@ -96,7 +96,6 @@ keymap("n", "<leader>mr", ":Rename! ", opts) --Menu rename
 if vim.fn.hostname() == "amethyst" then
 	keymap("n", "<leader>oa", ":e /home/thenomadicaspie/gfc/project/solid-leads-api/<CR>", opts)
 	keymap("n", "<leader>oi", ":e /home/thenomadicaspie/.config/nvim/init.vim<CR>", opts)
-	keymap("n", "<leader>os", ":e /home/thenomadicaspie/gfc/project/solid-leads/<CR>", opts)
 	keymap("n", "<leader>ok", ":e /home/thenomadicaspie/.config/nvim/lua/keymaps.lua<CR>", opts)
 	keymap("n", "<leader>oo", ":e /home/thenomadicaspie/.config/nvim/lua/options.lua<CR>", opts)
 	keymap("n", "<leader>od",
@@ -111,8 +110,8 @@ if vim.fn.hostname() == "amethyst" then
 		, opts)
 	keymap("n", "<leader>op", ":e /home/thenomadicaspie/projects/pir/src/App.js<CR>", opts)
 	keymap("n", "<leader>od", ":e /home/thenomadicaspie/.config/REAPER/Scripts/reaper-keys/definitions/defaults/<CR>", opts)
-	keymap("n", "<leader>oc",
-		":e /home/thenomadicaspie/.config/REAPER/Scripts/ChordGun-release/ChordGun/src/interface/handleInput.lua<CR>", opts)
+	keymap("n", "<leader>ow", ":e /home/thenomadicaspie/projects/contest/<CR>", opts)
+	keymap("n", "<leader>os", ":e /home/thenomadicaspie/projects/sound/src/App.js<CR>", opts)
 end
 
 --Plug
