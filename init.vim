@@ -1,4 +1,4 @@
-" 2023-04-08
+" 2023-04-13
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-commentary' "Use gc to comment stuff
 Plug 'lewis6991/impatient.nvim' "Speed up loading Lua modules in Neovim to improve startup time
