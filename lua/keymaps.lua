@@ -112,7 +112,8 @@ if vim.fn.hostname() == "amethyst" then
 	keymap("n", "<leader>od", ":e /home/thenomadicaspie/.config/REAPER/Scripts/reaper-keys/definitions/defaults/<CR>", opts)
 	keymap("n", "<leader>ow", ":e /home/thenomadicaspie/projects/contest/<CR>", opts)
 	keymap("n", "<leader>ob", ":e /home/thenomadicaspie/projects/book-challenge-php/<CR>", opts)
-	keymap("n", "<leader>os", ":e /home/thenomadicaspie/repos/<CR>", opts)
+	keymap("n", "<leader>os", ":e /home/thenomadicaspie/repos/scraping/<CR>", opts)
+	keymap("n", "<leader>om", ":e /home/thenomadicaspie/repos/menu/<CR>", opts)
 
 end
 
