@@ -114,7 +114,7 @@ if vim.fn.hostname() == "amethyst" then
 	keymap("n", "<leader>ob", ":e /home/thenomadicaspie/projects/book-challenge-php/<CR>", opts)
 	keymap("n", "<leader>os", ":e /home/thenomadicaspie/repos/scraping/<CR>", opts)
 	keymap("n", "<leader>om", ":e /home/thenomadicaspie/repos/menu/<CR>", opts)
-
+	keymap("n", "<leader>oa", ":e /home/thenomadicaspie/ai/<CR>", opts)
 end
 
 --Plug
